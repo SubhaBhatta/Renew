@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Renew - Fresh Starts for a Better Tomorrow</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f9;
+        color: #333;
+        overflow-x: hidden;
+      }
+      header {
+        background-color: #2e8b57;
+        color: white;
+        padding: 20px 0;
+        text-align: center;
+        animation: slideDown 1s;
+      }
+      header h1 {
+        margin: 0;
+        font-size: 2.5em;
+        animation: fadeIn 2s;
+      }
+      header p {
+        font-size: 1.2em;
+        animation: fadeIn 2s 1s;
+      }
+      nav {
+        background-color: #2e8b57;
+        display: flex;
+        justify-content: center;
+        padding: 10px 0;
+        animation: slideDown 1s 0.5s;
+      }
+      nav a {
+        color: white;
+        text-decoration: none;
+        margin: 0 15px;
+        font-size: 1em;
+        transition: color 0.3s, transform 0.3s;
+      }
+      nav a:hover {
+        text-decoration: underline;
+        color: #ffcc00;
+        transform: scale(1.1);
+      }
+      section {
+        padding: 20px;
+        text-align: center;
+      }
+      .feature {
+        background: white;
+        margin: 20px auto;
+        padding: 20px;
+        max-width: 800px;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        opacity: 0;
+        transform: translateY(20px);
+        animation: slideIn 1s forwards;
+      }
+      .feature:hover {
+        transform: scale(1.03);
+        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+        transition: transform 0.3s, box-shadow 0.3s;
+      }
+      footer {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 10px 0;
+      }
+      footer p {
+        margin: 0;
+      }
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+      @keyframes slideIn {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      @keyframes slideDown {
+        from {
+          transform: translateY(-100%);
+        }
+        to {
+          transform: translateY(0);
+        }
+      }
+      .scroll-btn {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background-color: #2e8b57;
+        color: white;
+        border: none;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        font-size: 1.5em;
+        cursor: pointer;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        opacity: 0;
+        transform: scale(0.8);
+        transition: opacity 0.3s, transform 0.3s;
+      }
+      .scroll-btn.show {
+        opacity: 1;
+        transform: scale(1);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Renew</h1>
+      <p>Fresh Starts for a Better Tomorrow</p>
+    </header>
+    <nav>
+      <a href="environment.html">Environmental Renewal</a>
+      <a href="community.html">Community Rejuvenation</a>
+      <a href="personal.html">Personal Second Chances</a>
+    </nav>
+    <section id="environmental" class="feature">
+      <h2>Environmental Renewal</h2>
+      <p>
+        Join initiatives like tree planting, recycling drives, and sustainable
+        living challenges to make a difference for our planet.
+      </p>
+    </section>
+    <section id="community" class="feature">
+      <h2>Community Rejuvenation</h2>
+      <p>
+        Collaborate on neighborhood projects, volunteer opportunities, and
+        skill-sharing programs to build stronger, more vibrant communities.
+      </p>
+    </section>
+    <section id="personal" class="feature">
+      <h2>Personal Second Chances</h2>
+      <p>
+        Find resources for career reboots, personal growth, and support networks
+        that help you embrace a fresh start.
+      </p>
+    </section>
+    <button class="scroll-btn" id="scrollToTop">&#8679;</button>
+    <footer>
+      <p>&copy; 2025 Renew | Fresh Starts for Everyone</p>
+    </footer>
+    <script>
+      // Show "Scroll to Top" button on scroll
+      const scrollBtn = document.getElementById("scrollToTop");
+
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > 300) {
+          scrollBtn.classList.add("show");
+        } else {
+          scrollBtn.classList.remove("show");
+        }
+      });
+
+      // Scroll to top when button is clicked
+      scrollBtn.addEventListener("click", () => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      });
+    </script>
+  </body>
+</html>

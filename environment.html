@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Environmental Renewal</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f9;
+        color: #333;
+        overflow-x: hidden;
+      }
+      nav {
+        background-color: #2e8b57;
+        color: white;
+        padding: 20px 0;
+        text-align: center;
+        animation: slideDown 1s;
+      }
+      nav h1 {
+        margin: 0;
+        font-size: 2.5em;
+        animation: fadeIn 2s;
+      }
+      nav a {
+        color: white;
+        text-decoration: none;
+        margin: 0 15px;
+        font-size: 1em;
+        transition: color 0.3s, transform 0.3s;
+      }
+      nav a:hover {
+        text-decoration: underline;
+        color: #ffcc00;
+        transform: scale(1.1);
+      }
+      main {
+        padding: 20px;
+        animation: fadeIn 2s;
+      }
+      section {
+        background-color: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      section h2 {
+        margin: 0;
+        color: #2e8b57;
+        font-size: 2em;
+      }
+      section p {
+        font-size: 1.2em;
+        line-height: 1.6;
+      }
+      @keyframes slideDown {
+        from {
+          transform: translateY(-100%);
+        }
+        to {
+          transform: translateY(0);
+        }
+      }
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      #images {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      #images img {
+        width: 100%;
+        max-width: 400px;
+        margin: 20px;
+      }
+      #images img:nth-child(2) {
+        margin: 20px;
+      }
+
+      @media (max-width: 890px) {
+        #images {
+          flex-direction: column;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <navbar>
+      <nav>
+        <h1>Renew | Fresh Starts for Everyone</h1>
+        <a href="index.html">Home</a>
+        <a href="#">Environmental Renewal</a>
+        <a href="community.html">Community Rejuvenation</a>
+        <a href="personal.html">Personal Second Chances</a>
+      </nav>
+    </navbar>
+
+    <main>
+      <section>
+        <h2>Environmental Renewal: A Step Toward a Sustainable Future</h2>
+        <p>
+          Environmental renewal focuses on restoring and revitalizing degraded
+          ecosystems to ensure a healthier planet and improve quality of life.
+          This process involves rehabilitating polluted land, water, and air,
+          conserving biodiversity, and promoting sustainable practices. As human
+          activity has significantly impacted the environment through
+          deforestation, pollution, and climate change, environmental renewal
+          has become essential for reversing these damages. Initiatives like
+          reforestation, wetland restoration, and renewable energy adoption not
+          only restore natural habitats but also mitigate the effects of global
+          warming. By addressing these issues, environmental renewal fosters
+          resilience in ecosystems and secures resources for future generations.
+        </p>
+        <p>
+          Equally important is the role of communities and governments in
+          driving environmental renewal. Grassroots efforts, such as community
+          clean-up campaigns and tree-planting initiatives, empower individuals
+          to contribute to a healthier environment. On a larger scale,
+          governments and organizations can implement policies that encourage
+          sustainable agriculture, protect endangered species, and reduce carbon
+          emissions. Successful examples include the revival of degraded forests
+          in Kenya’s Green Belt Movement and the cleanup of the Rhine River in
+          Europe, both of which demonstrate the power of collective action.
+          Ultimately, environmental renewal is a call to preserve our planet’s
+          natural heritage and ensure a sustainable, thriving future for all.
+        </p>
+      </section>
+      <section id="images">
+        <img src="giphy.webp" alt="Cleaning" />
+        <img src="giphy2.webp" alt="Planting" />
+      </section>
+    </main>
+  </body>
+</html>
